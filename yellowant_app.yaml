@@ -1,0 +1,241 @@
+api_url: http://45c9c08e.ngrok.io/apiurl/
+creator_email: abhiram.natarajan@gmail.com
+documentation_url: http://a491b035.ngrok.io/docs
+functions:
+  create_company:
+    function_type: 1
+    input_args:
+      Company-Address:
+        arg_type: 14
+        description: Address of the company
+        example: Bangalore, Karnataka, India
+        name: Company-Address
+        required: 0
+      Company-Email:
+        arg_type: 14
+        description: EmailID of company personnel
+        example: ankur@yellowant.com
+        name: Company-Email
+        required: 0
+      Company-Name:
+        arg_type: 14
+        description: Name of company
+        example: YellowAnt
+        name: Company-Name
+        required: 1
+      Company-Phone:
+        arg_type: 14
+        description: Company Phone number
+        example: '9340148124'
+        name: Company-Phone
+        required: 0
+      Company-URL:
+        arg_type: 14
+        description: Website of the company
+        example: http://yellowant.com
+        name: Company-URL
+        required: 0
+    invoke_name: create_company
+    is_active: 1
+    max_retries: 0
+    name: Create Company
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Company contact details
+    user_rate_limit: 0.0
+  create_contact:
+    function_type: 1
+    input_args:
+      Address:
+        arg_type: 14
+        description: Address of the contact
+        example: Koramangala, Bangalore
+        name: Address
+        required: 0
+      Company-Name:
+        arg_type: 14
+        description: Name of Company associated with
+        example: YellowAnt
+        name: Company-Name
+        required: 0
+      Email:
+        arg_type: 14
+        description: Email ID of the contact
+        example: ankur@yellowant.com
+        name: Email
+        required: 0
+      Full-Name:
+        arg_type: 14
+        description: First name of contact
+        example: George
+        name: Full-Name
+        required: 1
+      Phone-No:
+        arg_type: 14
+        description: Phone Number of the contact
+        example: '59301412094'
+        name: Phone-No
+        required: 0
+    invoke_name: create_contact
+    is_active: 1
+    max_retries: 0
+    name: Create a contact
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Creating contacts
+    user_rate_limit: 0.0
+  create_deal_note:
+    function_type: 1
+    input_args:
+      Deal-ID:
+        arg_type: 14
+        description: Deal ID to make note onto. Run the list all deals function to
+          receive the ID mapping to a deal.
+        example: '195705124812'
+        name: Deal-ID
+        required: 1
+      Description:
+        arg_type: 14
+        description: Description of deal note
+        example: 4 iron man figurines
+        name: Description
+        required: 0
+      Subject:
+        arg_type: 14
+        description: Subject of the Note
+        example: Selling Toys
+        name: Subject
+        required: 1
+    invoke_name: create_deal_note
+    is_active: 1
+    max_retries: 0
+    name: Create Note for a Deal
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Create a note for a deal
+    user_rate_limit: 0.0
+  create_note:
+    function_type: 1
+    input_args:
+      Description:
+        arg_type: 14
+        description: Description of the note
+        example: Book a  flight to Sydney on the 30th
+        name: Description
+        required: 0
+      EmailID:
+        arg_type: 14
+        description: Search for contact via email ID
+        example: ankur@yellowant.com
+        name: EmailID
+        required: 1
+      Subject:
+        arg_type: 14
+        description: Subject of the note
+        example: Flight Bookings
+        name: Subject
+        required: 1
+    invoke_name: create_note
+    is_active: 1
+    max_retries: 0
+    name: Create Note for a Contact
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Create a note on agile crm for a  specific contact
+    user_rate_limit: 0.0
+  list_deals:
+    function_type: 1
+    input_args: {}
+    invoke_name: list_deals
+    is_active: 1
+    max_retries: 0
+    name: List All Deals
+    output_keys:
+      _keys:
+        list: '[list]:    List of List'
+      list:
+        ID: '__unicode:    List  region  names'
+        Name: '__unicode:    List  region  names'
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: List all deals of the user
+    user_rate_limit: 0.0
+  make_deal:
+    function_type: 1
+    input_args:
+      Deal-Close-Date:
+        arg_type: 14
+        description: Close date of deal
+        example: 14/05/2020
+        name: Deal-Close-Date
+        required: 0
+      Deal-Milestone:
+        arg_type: 14
+        description: Milestone of Deal
+        example: Proposal
+        name: Deal-Milestone
+        required: 1
+      Deal-Name:
+        arg_type: 14
+        description: Name of the deal
+        example: Sales
+        name: Deal-Name
+        required: 1
+      Deal-Probability:
+        arg_type: 14
+        description: Probability of deal
+        example: '20'
+        name: Deal-Probability
+        required: 1
+      Deal-Value:
+        arg_type: 14
+        description: Value of the deal
+        example: '500'
+        name: Deal-Value
+        required: 1
+    invoke_name: make_deal
+    is_active: 1
+    max_retries: 0
+    name: Make Deal
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Make a deal on AgileCRM
+    user_rate_limit: 0.0
+  search_by_email:
+    function_type: 1
+    input_args:
+      EmailID:
+        arg_type: 14
+        description: Email ID using which search is to be performed
+        example: a@something.com
+        name: EmailID
+        required: 1
+    invoke_name: search_by_email
+    is_active: 1
+    max_retries: 0
+    name: Search by email
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Search for contact info by email
+    user_rate_limit: 0.0
+icon_url: https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1520572498/agile-crm.png
+install_page_url: http://e696adb0.ngrok.io/install
+invoke_name: agile
+is_active: 1
+is_production_or_sandbox: 0
+long_description: Agile CRM implementations
+name: Agile CRM
+privacy_policy_url: http://a491b035.ngrok.io/privacy
+rate_limit: 0.0
+rate_limited: 0
+redirect_uris: http://45c9c08e.ngrok.io/redirecturl/
+short_description: Agile CRM implementations
+user_rate_limit: 0.0
+visibility_scope: 1
+website: http://e696adb0.ngrok.io/install
