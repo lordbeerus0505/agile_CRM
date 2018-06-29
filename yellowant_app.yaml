@@ -1,4 +1,4 @@
-api_url: http://45c9c08e.ngrok.io/apiurl/
+api_url: https://agilecrm1.herokuapp.com/apiurl/
 creator_email: abhiram.natarajan@gmail.com
 documentation_url: http://a491b035.ngrok.io/docs
 functions:
@@ -156,10 +156,10 @@ functions:
     name: List All Deals
     output_keys:
       _keys:
-        list: '[list]:    List of List'
+        list: '[list]: List of List'
       list:
-        ID: '__unicode:    List  region  names'
-        Name: '__unicode:    List  region  names'
+        ID: '__unicode: List  region  names'
+        Name: '__unicode: List  region  names'
     privacy_mode: 0
     rate_limited: 0
     short_description: List all deals of the user
@@ -225,17 +225,17 @@ functions:
     short_description: Search for contact info by email
     user_rate_limit: 0.0
 icon_url: https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1520572498/agile-crm.png
-install_page_url: http://e696adb0.ngrok.io/install
+install_page_url: https://agilecrm1.herokuapp.com/
 invoke_name: agile
 is_active: 1
 is_production_or_sandbox: 0
 long_description: Agile CRM implementations
 name: Agile CRM
-privacy_policy_url: http://a491b035.ngrok.io/privacy
+privacy_policy_url: https://agilecrm1.herokuapp.com/privacy
 rate_limit: 0.0
 rate_limited: 0
-redirect_uris: http://45c9c08e.ngrok.io/redirecturl/
+redirect_uris: https://agilecrm1.herokuapp.com/redirecturl/
 short_description: Agile CRM implementations
 user_rate_limit: 0.0
 visibility_scope: 1
-website: http://e696adb0.ngrok.io/install
+website: https://agilecrm1.herokuapp.com/
