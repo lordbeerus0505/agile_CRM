@@ -39,14 +39,16 @@ BASE_HREF="/"
 SITE_PROTOCOL = "https://"
 
 
-YA_APP_ID = os.environ.get("YA_APP_ID", 1889)
+
+YA_APP_ID = str(data_json['application_id'])
 # Client ID generated from the YA developer console. Required to identify requests from this application to YA
-YA_CLIENT_ID = os.environ.get("YA_CLIENT_ID", "XK5B7u0mDDzzwkt3YZoDQf804L5mQefWaKK89ZRq")
+YA_CLIENT_ID = str(data_json['client_id'])
 # Client secret generated from the YA developer console. Required to identify requests from this application to YA
-YA_CLIENT_SECRET = os.environ.get("YA_CLIENT_SECRET", "JVQJYjHmcCltNwhJdnyeKghNrZX8fekfibITdNSm0lW7Py2mWCd54AKDiZUzfL4xtDeTtFYWUdxQDcVUtkf96MUlikCalkEYFcqPsonKpWegiEWE8AN0y0IgmKapyS94")
+YA_CLIENT_SECRET = str(data_json['client_secret'])
 # Verification token generated from the YA developer console. This application can verify requests from YA as they will
 # carry the verification token
-YA_VERIFICATION_TOKEN = os.environ.get("YA_VERIFICATION_TOKEN", "flezxPkJQXNPnBhoSsRTPZjBrc0t5pHxklftUgDwJinLHQNE4fuB8bvpKZYarGj08pavza1I4Z8Hp0vznFwkDlSCwI8SWW7obI9TzduZZYKINkT5OQrzhlgyZwbyn7Kb")
+YA_VERIFICATION_TOKEN = str(data_json['verification_token'])
+#YA_VERIFICATION_TOKEN = os.environ.get("YA_VERIFICATION_TOKEN", "flezxPkJQXNPnBhoSsRTPZjBrc0t5pHxklftUgDwJinLHQNE4fuB8bvpKZYarGj08pavza1I4Z8Hp0vznFwkDlSCwI8SWW7obI9TzduZZYKINkT5OQrzhlgyZwbyn7Kb")
 
 ### END YellowAnt specific settings ###
 
@@ -81,7 +83,6 @@ elif DEV_ENV == "HEROKU":
     BASE_URL = "https://{}.herokuapp.com/".format(app_name)
     app_name = os.environ.get("HEROKU_APP_NAME")
     SITE_DOMAIN_URL = "herokuapp.com"
-
 #----------------------------------------------------------------------------------
 # Application definition
 
