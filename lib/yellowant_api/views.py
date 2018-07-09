@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.conf import settings
 
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 from yellowant import YellowAnt
 
 from .models import YellowAntRedirectState, UserIntegration, Agile_Credentials
@@ -109,7 +110,7 @@ def yellowant_oauth_redirect(request):
     #reverse ('/')
 
 
-
+@csrf_exempt
 def yellowant_api(request):
     """Receive user commands from YA"""
     data = json.loads(request.POST.get("data"))
@@ -198,3 +199,4 @@ def api_key(request):
 #         tenant=tenant
 #     )
 #     return credentials, subscription_id
+
