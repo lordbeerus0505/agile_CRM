@@ -23,8 +23,13 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="90">
               <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+=======
+            <state relative-caret-position="75">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+>>>>>>> c9757b8c4fe6014f3e7280293bec7bc880982ad5
             </state>
           </provider>
         </entry>
@@ -197,6 +202,27 @@
               <item name="yellowant-agile-CRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="yellowant-agile-CRM" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="yellowant-agile-CRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yellowant-agile-CRM" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yellowant-agile-CRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yellowant-agile-CRM" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yellowant-agile-CRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yellowant-agile-CRM" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> c9757b8c4fe6014f3e7280293bec7bc880982ad5
           </expand>
           <select />
         </subPane>
@@ -282,7 +308,11 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.58474576" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.30169493" />
+>>>>>>> c9757b8c4fe6014f3e7280293bec7bc880982ad5
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,8 +575,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="90">
           <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+=======
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+>>>>>>> c9757b8c4fe6014f3e7280293bec7bc880982ad5
         </state>
       </provider>
     </entry>

@@ -3,5 +3,9 @@ __pycache__/
 */node_modules
 db.sqlite3
 *.pot
+<<<<<<< HEAD
 *.log
 /venv
+=======
+*.log
+>>>>>>> c9757b8c4fe6014f3e7280293bec7bc880982ad5
