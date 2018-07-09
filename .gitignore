@@ -8,4 +8,5 @@ db.sqlite3
 /venv
 =======
 *.log
+*.idea
 >>>>>>> c9757b8c4fe6014f3e7280293bec7bc880982ad5
